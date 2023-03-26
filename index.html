@@ -29,51 +29,50 @@
             <!--==================== body ====================-->
             <section class="body section" id="body">
                 <h2 class="middle-heading"> What is Time and Space Complexity? IMPORTANT?</h2>
-                <p class="body-paragraph">Once we develop the algorith, what're the parameters to judge the efficiency of algorithm?
-                    What happens when our algorithm go working with a collection of 10,000 elements to 10 million? Or 10 billion?
+                <p class="body-paragraph">Once we develop the algorithm, what're the parameters to judge the efficiency
+                     of the algorithm? For example, what happens when our algorithm works with a collection of 10,000 elements to 10 million? Or 10 billion?
                     
                     
                      </p>
                      <p class="body-paragraph"> 
 
-                        There are two parameters to judge the efficiency of algorithm. 
-                        One parameter is running time of the program and another parameter is the space consumed by the program on memory. Which means, 
-                        Running time used by the algorith or program is Time Complexity while, space in memory used  or consumed while doing that computation is called Space Complexity.
+                        There are two parameters to judge the efficiency of the algorithm. One parameter is the program's running time, 
+                        and another parameter is the space consumed by the program in memory. This means the Running time used by the algorithm or program is Time Complexity, 
+                        while space in memory used or consumed while doing that computation is called Space Complexity.
                         
                         
                          </p>
-                         <p class="body-paragraph"> On todays world we have strorage sizes on GB or TB and the program sizes would be on small KBs so the space parameter is not that much 
-                            effieicent untill and unless we are running through the sort of storage. But the running time parameter is the important paramenter
-                            to judge the efficiency of the algorith. So the time complexity can be used as a proxy for space complexity as well.
-                             </p>
+                         <p class="body-paragraph">In today's world, we have storage sizes of GB or TB, and the program sizes would be
+                             on small KBs, so the space parameter is only that efficient once and unless we run through the sort of storage. 
+                             But the running time parameter is an important parameter to judge the algorithm's efficiency. So the time complexity can also be used as a 
+                             proxy for space complexity.</p>
                              <h3 class="body-sub-heading"> How to Calculate Time Complexity of a Algorithm?</h3>
                             <p class="body-paragraph"> 
 
-                                We can calulate the time and space taken by any program by running the programm with 
-different sizes of data by implementing time checking functions. like this on python :
-start = time.time()
-print("hello")
-end = time.time()
-print(end - start)
+                                We can calulate the time and space taken by any program by running the programm with different sizes of data by implementing time
+                                 checking functions. like this on python : 
+                                 start = time.time() print("hello") end = time.time() print(end - start)
                             </p>
-                            <p class="body-paragraph"> But this approach of the time required for executing a program varies on several environmen, such as: 
-                                The number of operations performed and sizes of data size given as input in the program.   </p>
+                            <p class="body-paragraph"> But this approach of the time required for executing a program varies on several environments, 
+                                such as the number of operations performed and the sizes of data size given as input in the program.  </p>
 
-                            <p class="body-paragraph">Different device will have different speed for the computaion of the same program.
-                                Data transfer witin medium and devices will vary. Will need to use same set of hardware and software.   </p>
+                            <p class="body-paragraph">The different devices will have different speeds for the computation of the same program.
+                                 Data transfer within medium and devices will vary. Will need to use the same set of hardware and software.   </p>
 
-                                <p class="body-paragraph">If we use different hardware to test the algorithm,
-                                    then we may get two different time taken by the algorithm. How a algorithm can give two times to run same set of data on different machine?
-                                     So, we cannot say this time is globally accepted.
-                                    To overcome the limitations of experimental study, we need to go beyond experimental study. And the solution is the use of asymptotic notation.</p>
+                                <p class="body-paragraph">If we use different hardware to test the algorithm, 
+                                    then we may get two different times taken by the algorithm. How can an algorithm give two times to run the same set of data on a different machine?
+                                     So, this time is not globally accepted. To overcome the limitations of experimental study, we need to go beyond experimental study. 
+                                     And the solution is the use of asymptotic Notation.</p>
 
 
                             <h4 class="list-sub-heading"> What is Asymptotic Notation in DSA?</h4>
 
 
-                            <p class="body-paragraph"> Asymptotic notation is a algebrical method that calculates the required time in terms of input size and independent of the code executiion. </p>
-<span> Asymptotic Notation deals with general methodoly for analyzing of running time of the algorithms which uses high level description instead of testing one of its implementation. Asymptotic Notation takes into account of all possible inputs and allows
-    one to evaluate the efficiency of any algorithm in a way that is independentof hardware or software environment.</span>
+                            <p class="body-paragraph"> Asymptotic Notation is an algebraical method that calculates the required time in terms of input size and is independent of the code execution. </p>
+                            <p class="body-paragraph"> Asymptotic Notation deals with a general method for analyzing of running time of the algorithms,
+                                 which uses high-level description instead of testing one of its implementations. Asymptotic Notation takes into account all possible inputs
+                                  and allows one to evaluate the efficiency of any algorithm in a way that is independent of hardware or software environment. 
+                                  </p>
                             <h4 class="list-sub-heading"> There are mainly three asymptotic notations:</h4>
                             <ol class="list">
                                 <li> Big-O notation</li>
@@ -83,8 +82,8 @@ print(end - start)
 
 
                             </ol>
-                            <p class="body-paragraph"> Before moving ahead, there is a concept that we need to understand first and then we can read the notation. In any alogoritmh, 
-                                it will have three cases
+                            <p class="body-paragraph"> Before moving ahead, there is a concept that we need to understand first,
+                                 and then we can read the Notation. In any algorithm, it will have three cases
                             </p>
                             <ol class="list">
                                 <li> Best Case</li>
@@ -97,15 +96,16 @@ print(end - start)
                             <figure> 
                                 <img src="./assets/img/array.webp" width="600">
                             </figure>
-                            <p class="body-paragraph"> As hown in figure, lets say we have any array. In this array we have some element and our task is to search element element on this array.
-                                The element may or may not be on our array.
+                            <p class="body-paragraph"> As shown in the figure, let us say we have an array. In this array, we have some elements and our task is to search for 
+                                elements on this array. The element may or may not be on our array.
                             </p>
-                            <p class="body-paragraph"> If we find the element on the first try it will take us less time, if we find that array on the third, fourth position that will
-                                take less time than last postion but more time compared to firts position.
+                            <p class="body-paragraph"> If we find the element on the first try, it will take us less time; if we find that array on the third and fourth positions,
+                                 that will take less time than the last position but more time compared to the first position.
                             </p>
 
-                            <p class="body-paragraph"> If the element is found at first we will say the best case of the algorithm, if we found the element at last we will say worst case of 
-                                the algorithm, and if it is found in-between we will say average case of the algorithm. Average case will lie somewhere between best case and worst case.
+                            <p class="body-paragraph"> If the element is found at first, we will say the best case of the algorithm;
+                                 if we find the element, at last, we will say the worst case of the algorithm. And if it is found in between, 
+                                 we will say the average case of the algorithm. So the average case will lie somewhere between the best and worst cases.
                             </p>
                             <p class="body-paragraph"> Also, we can plot graph from the time taken by the algorithm on different datasets on multiple instances. </p>
                             <figure> 
@@ -113,106 +113,115 @@ print(end - start)
                             </figure>
                             
                             <!--==================== graph ====================-->
-                            <p class="body-paragraph"> The dataset for which maximum time has been taken, we will say worst case of the algorithm. And the dataset for which lowest time 
-                                has been taken, that is the best case of the algorithm. And, total are in-between best and worst which is not fixed is called average case.
+                            <p class="body-paragraph"> The dataset for which maximum time has been taken, we will say the worst case of the algorithm. 
+                                And the dataset for which the lowest time has been taken is the best case of the algorithm. And, the total is in-between 
+                                best and worst which is not fixed is called the average case.
+                               
                             </p>
-                            <p class="body-paragraph"> Can you imagine which case does it take more time or difficult to estimate?
+                            <p class="body-paragraph">  Can you imagine which case does it take more time or is difficult to estimate?
                             
                             </p>
 
-                            <p class="body-paragraph"> The answer is average case. Because we know the probablity of occurance of worst case and best case but what is the probablity of 
-                                but what is the probablity to occur average case, , exactly we don't know. Thats why average cas eis more difficult than the best and worst case because it has no 
-                                any exact possibility of occurance.
+                            <p class="body-paragraph"> The answer is an average case. Because we know the probability of occurrence of 
+                                the worst case and best case, but what is the probability of occurring average case? Exactly we don't know.
+                                 That's why the average case is more difficult than the best and worst case because it has no exact possibility of occurrence.
 
                             </p>
-                            <p class="body-paragraph"> To understand the efficiency of algorithm we test and analyze the code how quickly the runtime grows when placed under the large amount of data sets. And these
-                                outcomes are analyzed mainly with three asymptotic notations. Lets learn these three main asymptotic notations.
+                            <p class="body-paragraph"> To understand the efficiency of the algorithm, we test and analyze the code and how quickly the runtime 
+                                grows when placed under a large amount of data sets. And these outcomes are analyzed mainly with three asymptotic notations.
+                                 Let's learn these three main asymptotic notations.
                             </p>
 
                             <h4 class="list-sub-heading"> Big-O Notation - Big-Oh(o)</h4>
 
-                            <p class="body-paragraph"> Big-O notation is used to define the upper bound of an algorithm in terms of time complexity. Big-O notation gives asymptotic
-                                upper bound. Which means, Big-O notation always indicates the maximum time required by an algorithm for all input values by an algorithm.
-                                Big-O notation describes the worst case of the algorithmic time complexity.
+                            <p class="body-paragraph"> Big-O Notation is used to define the upper bound
+                                 of an algorithm in terms of time complexity. Big-O Notation gives an asymptotic upper bound.
+                                  This means Big-O Notation always indicates the maximum time required for all input values by an algorithm. 
+                                  Big-O Notation describes the worst case of the algorithmic time complexity.
                             </p>
 
 
                             <h4 class="list-sub-heading"> Big-Omega Notation - Big-Omega(Ω)</h4> 
 
-                            <p class="body-paragraph"> Big_Omega notation is used to define the lower bound of an algorithm in terms of time complexity. Big-Omega notation always
-                                indicates the minimum time required by an algorithm for all input values. That means, Big-Omega notation describes the best case of an algorithm
-                                which is asymptotic lower bound.
+                            <p class="body-paragraph"> Big-Omega Notation is used to define the lower bound of an
+                                 algorithm in terms of time complexity. Big-Omega Notation always indicates the minimum time required by an
+                                  algorithm for all input values. That means, Big-Omega notation describes the best case of an algorithm which is the asymptotic lower bound.
                             </p>
 
                             <h4 class="list-sub-heading"> Big-Theta Notation - Big-Theta(Θ)</h4> 
 
 
-                            <p class="body-paragraph"> Big-Theta notation is used to define the average bound of an algorith in terms of time complexity and denotes asymptotic tight
-                                bound. That means, Big-Theta notation always indicates the average time required by an algorithm for all input values. 
-                                Which means, Big-Theta notation describes the avergae case of an algorithms time complexity.
+                            <p class="body-paragraph"> Big-Theta notation is used to define the average bound of an algorithm in terms of time complexity
+                                 and denotes an asymptotic tight bound. That means Big-Theta Notation always indicates the average time required by an algorithm 
+                                 for all input values. This means Big-Theta Notation describes the average case of an algorithm's time complexity.
                             </p>
                             
 
 
-                            <p class="body-paragraph">Now we know the Asymptotic Analysis, and Worst, Average, and Best Cases of Algorithms. While going through the process to understnad 
-                                data structures and algorithm, you might have seen more stress given to Big-O notation. Do you know what is Big O Notation and why you should care?
-                                How to calculate time complexity with big O notation? How to calculate Big O notation?
+                            <p class="body-paragraph">Now we know the Asymptotic Analysis and the Worst, Average, 
+                                and Best Cases of Algorithms. While going through the process of understanding data structures and algorithms, 
+                                you might have seen more stress given to Big-O Notation. Do you know what is Big O Notation and why you should care? 
+                                How do you calculate time complexity with big O notation? How to calculate Big O notation?
                             </p>
 
-                            <h4 class="list-sub-heading"> Do you know what is Big O Notation and why you should care?</h4> 
+                            <h4 class="list-sub-heading"> Do you know what is Big O Notation and why you should care?
+                            </h4> 
 
 
-                            <p class="body-paragraph"> Programmers or software engineers frequently engage in prototyping prior to tackling a complex project. 
-                                Efficiency may not be a top priority during this stage, as the primary goal is to produce a functional product as quickly as possible. 
-                                Eventually, however, it becomes necessary to transition to a deployable implementation of the project idea. At this point, any technical debt 
-                                that was ignored during prototyping must be resolved.
+                            <p class="body-paragraph"> Programmers or software engineers frequently engage in prototyping before tackling
+                                 a complex project. Efficiency may not be a top priority during this stage, as the primary goal is to produce
+                                  a functional product as quickly as possible. Eventually, however, it becomes necessary to transition to a deployable
+                                   implementation of the project idea. At this point, any technical debt that was ignored during prototyping must be resolved.
                             </p>
-                            <p class="body-paragraph"> For this, we need to compare different algorithm or code structure to know how fast or slow our code or algorithm works when
-                                the input size of data grows. So, how do you compare the performance of your algorithm or code and determine which one is superior?
+                            <p class="body-paragraph"> For this, we need to compare different algorithms or 
+                                code structures to know how fast or slow our code or algorithm works when the input size
+                                 of data grows. So, how do you compare the performance of your algorithm or code and determine which one is superior?
                             </p> 
 
-                            <p class="body-paragraph">Here comes Big-O Notation. Big-O Notation is the asymptotic notation approach which help us to know how long the code or algorithm
-                                takes to run in a high-level mathematically.
+                            <p class="body-paragraph">Here comes Big-O Notation. Big-O Notation is the asymptotic notation approach which helps
+                                 us to know how long the code or algorithm takes to run in a high level mathematical overview.
                             </p>
 
-                            <p class="body-paragraph"> Big-O Notation allows us to calculate the complexity of our code or algorithm giving showing us
-                               how the running time of our code or algorithm grows with increase in different input data sets.   In other words, Big-O Notation gives us the upper-bound
-                            runtime of any algorithm which is also known as worst case of any algorithm.                        </p>
+                            <p class="body-paragraph"> Big-O Notation allows us to calculate the complexity of our code or algorithm giving,
+                                 showing us how the running time of our code or algorithm grows with an increase in different input data sets.
+                                  In other words, Big-O Notation gives us the upper-bound runtime of any algorithm, which is also known as the worst case of any algorithm.                      </p>
 
-                            <p class="body-paragraph">Seems intricate, right? It may be a little challenging, but it's a crucial expertise for coders to possess, not just in practical scenarios,
-                             but also for self-evaluation of their skills (and yes, it's likely to be tested in interviews). 
-                             Therefore, take a deep breath, let go of any lingering memories of PreCalc, and enter the realm of Space and Time Complexity with courage. </p>
+                            <p class="body-paragraph">Seems intricate, right? It may be a little challenging, but it's a crucial expertise for coders to possess,
+                                 not just in practical scenarios but also for self-evaluation of their skills (and yes, it's likely to be tested in interviews).
+                                  Therefore, take a deep breath, let go of any lingering memories of PreCalc, and enter the realm of Space and Time Complexity with courage. </p>
 
-                             <p class="body-paragraph"> What Big-O Notation isn't? Big O is not going to give you or your team an exact answer on how long a piece of code will take to run.
-                                It's crucial to understand that the runtime of algorithms, as denoted by big O notation, does not translate directly to conventional 
-                                time units such as seconds, milliseconds, or microseconds. Big O notation enables us to analyze our code algebraically to gain
-                                 insight into its potential performance when faced with significant amounts of data. And, When analyzing running times, certain factors such
-                                  as the processor, programming language, or run-time environment are often not considered. 
-                                  An approach to understanding time taken is to view it as the count of operations or steps necessary to accomplish a task.
-                                  
-                                  Once we know the worst case, other cases will be
-                                   automatically better
-                                 tan this hence on DSA Big-O Notation is analysed to know the performance of any code piece. 
-
-
+                             <p class="body-paragraph">What isn't Big-O Notation? Big O is not going to give you or 
+                                your team an exact answer on how long a piece of code will take to run. It's crucial
+                                 to understand that the runtime of algorithms, as denoted by big O notation, does not 
+                                 translate directly to conventional time units such as seconds, milliseconds, or microseconds. 
+                                 Big O notation enables us to analyze our code algebraically to gain insight into its potential 
+                                 performance when faced with significant amounts of data. And, When analyzing running times,
+                                  certain factors such as the processor, programming language, or runtime environment are often not considered.
+                                   An approach to understanding time taken is to view it as the count of operations or steps necessary to accomplish a task.
+                                    Once we know the worst case, other cases will automatically be better than this; 
+                                    hence on DSA, Big-O Notation is analyzed to know the performance of any code piece.
 
 
 
-                            <h4 class="list-sub-heading">How to calculate time complexity with big O notation?</h4>
-                            <p class="body-paragraph"> Big O Notation can be represented with following formula.
+
+                            <h4 class="list-sub-heading">How do you calculate time complexity with big O notation?
+                            </h4>
+                            <p class="body-paragraph"> Big O Notation can be represented with the following formula.
+                                
                             </p>
                             <p class="body-paragraph"> f(n) = O(g(n))
                             </p>
-                            <p class="body-paragraph"> We read this formula as " f of n is big oh of g of n"
+                            <p class="body-paragraph"> We read this formula as " f of n is big oh of g of n."
                             </p>
-                            <p class="body-paragraph"> Where f(n) is running time of an algorithm, n is the constant. And, Big means "capital" and "o" or "oh" means order of complexity.
-                                So, for the convention of writing order of complexity it is named as O(g(n)). There are several running time complexities of an algorith from excellent to terrible.
-                                These complexities are also known as order of growth of time for a codepiece to execute. 
+                            <p class="body-paragraph"> Where f(n) is the running time of an algorithm, n is the constant. 
+                                And Big means "capital", and "o" or "oh" means an order of complexity. So, for the convention of writing order of complexity,
+                                 it is named O(g(n)). There are several running time complexities of an algorithm, from excellent to terrible. 
+                                 These complexities are also known as the order of growth of time for a codpiece to execute. 
                             </p>
 
                             <ul class="list">
-                                <li> Indicates the ‘order-of’ the algorithm (ie: what ballpark it is in)</li>
-                                <li> Notation: O(<numSteps>), eg: O(N), O(N log N), O(N2)
+                                <li>Indicates the ‘order-of’ the algorithm (i.e., what ballpark it is in)</li>
+                                <li> Notation: O(< numSteps >), eg: O(N), O(N log N), O(N<sup>2</sup>)
                                 </li>
                                 
 
@@ -224,9 +233,10 @@ print(end - start)
                             </figure>
 
                             <p class="body-paragraph">
-                                For the time being, don't worry about how to calculate time complexity with big O notation; we're just starting off. 
-                                For now, all you need to know is that the list above is arranged according to efficiency; 
-                                algorithms that run at O(log n) move along much more quickly than those that run at O(n!). Below is a graph that illustrates this:
+                                For the time being, don't worry about how you can calculate the time complexity with big O 
+                                notation; we're just starting. For now, all you need to know is that the list above is arranged according 
+                                to efficiency; algorithms that run at O(log n) move along much more quickly than those that run at O(n!).
+                                 Below is a graph that illustrates this:
                             </p>
                             <figure>
 
@@ -237,8 +247,9 @@ print(end - start)
 
                             <h4 class="list-sub-heading">O(1) - Constant Time Complexity</h4> 
 
-                            <p class="body-paragraph"> It gives constant output. Which means the time to execute the codepiece/algorithm will be same on every executiion.
-                                Big O(1) is the quickest running time. For any number of inputs the runtime always will be constant. Such as                           </p>
+                            <p class="body-paragraph"> It gives constant output. This means the time to execute the codpiece/algorithm
+                                 will be the same on every execution. Big O(1) is the quickest running time. For any number of inputs, 
+                                 the runtime always will be constant. Such as:                      </p>
                                 <ul class="list">
                                     <li> 1 Item -> 1 Sec</li>
                                     <li> 10 Item -> 1 Sec    </li>
@@ -249,13 +260,14 @@ print(end - start)
     
                                 </ul>
 
-                                <p class="body-paragraph"> Lets look at this code: 
+                                <p class="body-paragraph"> Let's look at this code:
                                     <br>
                                     input=20 <br>
                                     result =  input * 20<br>
                                     print(f'The result is {result}')
                                     <br>
-                                    For every value given on input variable, it will return same time to calculate. Time will not increase or decreas if the value was 10, 50,1000 ...
+                                    For every value given on the input variable, it will return the same time to calculate.
+                                     Time will not increase or decrease if the value is 10, 50,1000 ...
 
                                 </p>
 
@@ -278,11 +290,13 @@ print(end - start)
 
 
 
-                            <p class="body-paragraph"> The same will be true for this piece of code. The performance of the algorithm won't be impacted by changing input number.
-                                 Since 6 is a constant, the total number of operations is O(1+1+1+1+1+1+1) or O(6), however this can be approximated to only O(1).
-                                  Although it takes longer to execute than the preceding example, big O does not track the actual amount of time needed to do a task.
-                                   Big O measures how the algorithm's output varies as the size of the input set increases. This runtime is predictable and very scalable. If your
-                                   algorithm has Big O(1) your are best at what you are doing.
+                            <p class="body-paragraph"> The same will be true for this piece of code. 
+                                The performance of the algorithm won't be impacted by changing the input number. 
+                                Since 6 is a constant, the total number of operations is O(1+1+1+1+1+1+1) or O(6); however, 
+                                this can be approximated to only O(1). Although it takes longer to execute than the preceding example,
+                                 Big O does not track the actual amount of time needed to do a task. Big O measures how the algorithm's 
+                                 output varies as the size of the input set increases. This runtime is predictable and very scalable.
+                                  If your algorithm has Big O(1), you are best at what you are doing.
                             </p>
 
                             <p class="body-paragraph"> 
@@ -312,28 +326,30 @@ print(end - start)
 
                             <p class="body-paragraph"> 
 
-                                O(N), When input grows, so does the calculation time.(n) represents the number of inputs.
-                                 The time will increase linearly as the array's element count increases.
-                                 That means if an function has to run 10 times for a list that’s 10 items long, then it has linear time complexity.Such as: <br>
+                                O(N), When input grows, so does the calculation time. (n) represents the number of inputs.
+                                 The time will increase linearly as the array's element count increases. That means if a function has to run 10 times for a
+                                  list that’s 10 items long, then it has linear time complexity. Such as: <br>
                                  1 Item -> 1 Second <br>
                                  100 Items -> 100 Seconds <br>
                                  1000 Items -> 1000 Seconds <br>
                                 </p>
                                 <p class="body-paragraph"> 
-                                    Linear time compl is also known as iteration time complexity. For loop is  a great example of an algorithm/codepiece that has linear time complexity. Let’s look at an example: <br>
+                                    Linear time complexity is also known as iteration time complexity. 
+                                    For loop is a great example of an algorithm/codpiece that has linear time complexity. Let’s look at an example: <br>
                                     bigo=[10, 20, 30]<br>
                                     for item in bigo:<br>
                                         print(item)<br>
-                                        The complexity of the above codebase is linear in the above example since the number of iterations of the for-loop will
-                                         be equal to the size of the input items array. For instance, if there are 4 items in the items list, the for-loop will be executed 4 times.
+                                        The complexity of the above codebase is linear in the above example since the number of iterations of the for-loop will 
+                                        be equal to the size of the input items array. For example, if there are 4 items in the items list, the for-loop will be executed 4 times.
 
                                          </p>
 
 
                                          <h4 class="list-sub-heading">O(n²) - Quadratic Time Complexity </h4> 
 
-                                         <p class="body-paragraph"> Quadratic Time complexity is the sityation when the algorithm runs quadratic times. Which means, the time 
-                                            of calculation increases on squared size of the input data. This is also known as constantly nested iteration, exponential time complexity. Quadratic complexity is represented O(n²). Such as : <br>
+                                         <p class="body-paragraph">Quadratic Time complexity is the situation when the algorithm runs quadratic times. 
+                                            This means the time of calculation increases on the squared size of the input data. This is also known as constantly 
+                                            nested iteration, exponential time complexity. Quadratic complexity is represented by O(n²). Such as : <br>
 
                                             10 item ->  100 seconds <br>
                                             100 items ->  1000 seconds <br>
@@ -341,7 +357,7 @@ print(end - start)
 
 
                                             </p>
-                                            <p class="body-paragraph">Nested loop is one example of Quadratic Time Complexity
+                                            <p class="body-paragraph">Nested loop is one example of Quadratic Time Complexity <br>
 
                                             items=[4, 5, 6, 8]
                                             for item in items:<br>
@@ -352,36 +368,47 @@ print(end - start)
                                                 </p>
 
 
-                                            <p class="body-paragraph">
-                                                The number of items that can be used obviously affects how quickly this algorithm runs.
-                                                 It generates precisely n<sup>2</sup> combinations, where n is the total amount of items that can be used.
-                                                  The code would need to traverse over the array n more times if you added one more item. This method has an O(n²) time complexity.
-                                                  The time complexity would be O(n), where n is the number of for loops and l is the total number of items, if you were to add
-                                                   more for loops to lengthen the item. For instance, three loops yield an O(n<sup>3</sup>) result, four loops an O(n<sup>4</sup>) result, and so on.
-                                                
-                                                Code that executes in O(n<sup>2</sup>) should be avoided because adding more components greatly increases the 
-                                                number of operations. </p>
 
-                                                <p class="body-paragraph">   Bubble Sort,  Insertion Sort,  Selection Sort algorithms are the great example for Quadratic Complexity.</p>
+                                                <p class="body-paragraph">
+                                                    The number of items that can be used affects how quickly this algorithm runs. 
+                                                    It generates precisely n<sup>2</sup> combinations, where n is the total amount of items that can be used.
+                                                     The code would need to traverse over the array n more times if you added one more item.
+                                                      This method has an O(n²) time complexity. The time complexity would be O(n), 
+                                                      where n is the number of loops and l is the total number of items if you were to 
+                                                      add more for loops to lengthen the item. For instance, three loops yield an O(n<sup>3</sup>) result, 
+                                                      four loops an O(n<sup>4</sup>) result, and so on. Code that executes in O(n<sup>2</sup>) should be avoided because
+                                                       adding more components greatly increases the number of operations.
+
+
+
+
+                                                </p>
+
+                                                <p class="body-paragraph">Bubble Sort, Insertion Sort, and Selection Sort algorithms are great examples of Quadratic complexity.</p>
                             
                             
                                                 <h4 class="list-sub-heading">O(logn) - Logarithmic Complexity </h4> 
-                                                <p class="body-paragraph">   In Logarithmic Complexity(O(Logn)) growth of running time os proportional to the input size.
-                                                    In other words, the run time increases on linear as the input increase exponentially.
+                                                <p class="body-paragraph">   In Logarithmic Complexity(O(Logn)) growth of running time is
+                                                     proportional to the input size. In other words, the run time increases on linear as
+                                                      the input increase exponentially.
                                                     </p>
 
                                                     <p class="body-paragraph">
-                                                        A real world example for the O(Logn)- Logarithmic Complexity is finding a word in a dictionary where test is done halving the sample 
-                                                        size. For example, while looking for a word "Developer" you will open the dictionary at the middle where you could determine the word "D" comes 
-                                                        before or after the words that you are currently viewing. Once you determine that the word "D" is in the first half of the book, you can dismiss
-                                                        checking all of the pages in second half. Then you repeat the same process until you reach your word. By following this algorithm you could
-                                                        cut the number of pages that you must search by 1/2 everytime until you reach the word. 
+                                                        A real-world example of the O(Logn)- Logarithmic Complexity is finding
+                                                         a word in a dictionary where the test is done by halving the sample size. 
+                                                         For example, while looking for the word "Developer", you will open the dictionary
+                                                          in the middle, where you can determine the word "D" comes before or after
+                                                           the words that you are currently viewing. Once you determine that the word "D"
+                                                            is in the first half of the book, you can dismiss checking all of the pages in the second half.
+                                                             Then you repeat the same process until you reach your word. By following this algorithm, 
+                                                             you could cut the number of pages that you must search by 1/2 every time until you reach the word. 
                                                     </p>
                                                     <p class="body-paragraph">
-                                                        Binary search is an example for Logarithmic Complexity in a program. Logarithmic Complexity expects the data on the array to be sorted.
+                                                        Binary search is an example of Logarithmic complexity in a program. Logarithmic complexity expects the data on the array to be sorted.
+
                                                     </p>
                                                     <p class="body-paragraph">
-                                                        The calculation time increases on Linear as the input numbers increases exponentially.
+                                                        The calculation time increases on Linear as the input numbers increase exponentially.
                                                     </p>
 
                                                     <ul class="list">
@@ -394,7 +421,7 @@ print(end - start)
                         
                                                     </ul>
                                                     <p class="body-paragraph">
-                                                        O(log(n)) time complexity is very efficient when it comes to large input sizes
+                                                        O(log(n)) time complexity is very efficient when it comes to large input sizes. For example:
                                                         <br>
 
                                                         def binary_search(array, target):<br>
@@ -416,49 +443,52 @@ print(end - start)
 
                                                     </p>
 
-                                                    <p class="body-paragraph"> Point to be noted:
-                                                        O(n log n), which is frequently mistaken for O(log n), indicates that an algorithm has a linearithmic running time,
-                                                         which combines linear and logarithmic complexity. Divide and conquer sorting algorithms are linearithmic, 
-                                                         like the ones listed below:
+                                                    <p class="body-paragraph"> Point to be noted: O(n log n), which is frequently mistaken for O(log n), 
+                                                        indicates that an algorithm has a linearithmic running time, which combines linear and logarithmic 
+                                                        complexity. Divide-and-conquer sorting algorithms are linearithmic, like the ones listed below:
                                                          <ul class="list">
                                                          <li>merge sort</li>
                                                          <li> timsort</li>
                                                          <li> heapsort</li>
                                                         </ul>
-                                                        O(n log n) lies between O(n2) and O(n)
+                                                        
 
 
+                                                    </p>
+                                                    <p class="body-paragraph">
+                                                    O(n log n) lies between O(n2) and O(n)
                                                     </p>
 
                                                     <h4 class="list-sub-heading">O(n!) - Factorial Complexity </h4> 
                                                     <p class="body-paragraph"> 
-                                                        Factorial time complexity is one of the worst possible time complexity  when it comes to Big O Notation time complexity.
-                                                        The run time of calculation increases at the rate of n!. Which means if n is 6, it's 6x5x4x3x2x1, or 720. It isn't so bad
-                                                        at tiny data sets, but it immediately becomes horrible with other data sets. Such as:
+                                                        Factorial time complexity is one of the worst possible time complexity when
+                                                         it comes to Big O Notation time complexity. The run time of calculation increases
+                                                          at the rate of n! This means if n is 6, it's 6x5x4x3x2x1, or 720. It isn't so bad
+                                                           at tiny data sets, but it immediately becomes horrible with other data sets. Such as:
                                                     </p>
                                                     <ul class="list">
-                                                        <li>N=1, 1 option</li>
-                                                        <li> N=10, 3,628,800 options</li>
-                                                        <li> N=100, 9.332621544×10157</li>
+                                                        <li>N=1 -> 1 option</li>
+                                                        <li> N=10 -> 3,628,800 options</li>
+                                                        <li> N=100 -> 9.332621544×10157</li>
                                                        </ul>
                                                        <p class="body-paragraph">
-                                                        As shown on example below:<br>
+                                                        As shown in the example below:<br>
                                                         def factorial_time(number):<br>
                                                             for _ in range(number):<br>
                                                                 print(number)<br>
                                                                 factorial_time(number - 1) <br>
 
                                                         </p>
-                                                        <p class="body-paragraph"> One of the example of algorithm with Factorial Complexity is Traveling salesman algorithm.
+                                                        <p class="body-paragraph">One example of an algorithm with Factorial complexity is the Traveling Salesman algorithm
                                                         </p>
 
 
                                                         <h4 class="list-sub-heading">O(2<sup>n</sup>) - Exponential Complexity </h4>
 
                                                         <p class="body-paragraph">
-                                                            Any algorithm or codebase is said to have Exponential time complexity where the growth rate of runtime
-                                                            increases in double rate with each increase in input data. So, on any time when an unit input increases by 1,
-                                                            the number of operation executed is doubled.
+                                                            Any algorithm or codebase is said to have Exponential time complexity where the growth
+                                                             rate of runtime increases in double rate with each increase in input data. So, at any time when 
+                                                             a unit input increases by 1, the number of operations executed is doubled.
                                                             </p>
 
 
@@ -474,46 +504,47 @@ print(end - start)
                                                             <p class="body-paragraph">
 
 
-                                                        Some run times, such as O(2n) and O(n! ), have really terrible runtime complexity, as you can see from the chart.
-
-                                                            The performance of O(2n) and O(n!) runtime complexity algorithms are limited to quite small data sets. With 
-                                                            each new addition to the input, O(2n), also known as exponential time, doubles in length. Much worse is O(n!),
-                                                             or factorial time. Running time grows by a factor of n whenever n increases by 1.
+                                                                Some run times, such as O(2n) and O(n! ), have terrible runtime complexity,
+                                                                 as you can see from the chart. The performance of O(2n) and O(n!) 
+                                                                 runtime complexity algorithms are limited to quite small data sets. 
+                                                                 With each new addition to the input, O(2n), also known as exponential time, 
+                                                                 doubles in length. Much worse is O(n!), or factorial time.
+                                                                  Running time grows by a factor of n whenever n increases by 1.
                                                             </p>
 
                                                             <h4 class="list-sub-heading">How To Calculate Big O</h4>
                                                             
                                                             <p class="body-paragraph">
-                                                                To calculate the order of growth of time complexity in an algorithm Big O Notation is used.
-                                                                To calculate Big-O Notation we have following steps:
+                                                                To calculate the order of growth of time complexity in an algorithm, Big O Notation is used. 
+                                                                To calculate Big-O Notation, we have the following steps:
                                                             </p>
 
                                                             <ol class="list">
                                                                 <li> Count the operations</li>
-                                                                <li> Calculate Big O of each operations</li>
-                                                                <li> Add the Big O of each operations together</li>
+                                                                <li> Calculate the Big O of each operation</li>
+                                                                <li> Add the Big O of each operation together</li>
                                                                 <li> Remove Constants(Additive, Multiplicative...)</li>
-                                                                <li> Look at the largest factor on runtime and remove smallest one</li>                                                              
+                                                                <li> Look at the largest factor on runtime and remove the smallest one</li>                                                              
                                                             
 
                                                             </ol>
 
-                                                            <p class="body-paragraph"> Following above steps, let’s start small and calculate the Big O of a program.
+                                                            <p class="body-paragraph"> Following the above steps, let’s start small and calculate the Big O of a program.
 
 
                                                             </p>
-                                                            <p class="body-paragraph">  Suppose we have a equation : n<sup>2</sup>+10n+2 <br>
-                                                                What we will do at first? <br>
-                                                                Remove all the additive consts and now we have: n<sup>2</sup>+10n <br>
-                                                                Now, remove Multiplicative constant and we have : n<sup>2</sup>+n <br>
-                                                                We will look at the largest factor in the run-time, what we will ignore small factor? We will ignore n <br>
-                                                                And we have time complexity of our above equation:  n<sup>2 <br>
+                                                            <p class="body-paragraph">  Suppose we have an equation: n<sup>2</sup>+10n+2 <br>
+                                                                What will we do at first?<br>
+                                                                Remove all the additive constants, and now we have:  n<sup>2</sup>+10n <br>
+                                                                Now, remove the Multiplicative constant, and we have: n<sup>2</sup>+n <br>
+                                                                We will look at the largest factor in the runtime; what will we ignore as the small factor? We will ignore n <br>
+                                                                And we have the time complexity of our above equation:  n<sup>2 <br>
                                                                     which is Quadratic
 
                                                                 
                                                             </p>
 
-                                                            <p class="body-paragraph">  Lets learn Big O calculation with a simple program: <br>
+                                                            <p class="body-paragraph"> Let's learn Big O calculation with a simple program: <br>
                                                                 A = [1,2,3,4,5] <br>
                                                                 for i in A: <br>
                                                                  sum=sum+i <br>
@@ -523,22 +554,27 @@ print(end - start)
                                                                  for i in A: <br>
                                                                   item = item *i <br>
                                                                   print(item)
-                                                                 We have array and here we are running loop two times. On first loop we are doing some of all items of array. 
-                                                                 And on second loop we are doing product/multiplcation of all those items. The thing we need to notice here  is 
-                                                                 we have two loops but these loops are not nested/dependent, both are independent. What is order of growth? what is Big O here? 
+                                                                  We have an array, and here we run a loop two times. 
+                                                                  On the first loop, we are doing some of all items of the array.
+                                                                   And on the second loop, we are doing product/multiplication of all those items. 
+                                                                   We need to notice that we have two loops, but these loops are not nested/dependent; 
+                                                                   both are independent. What is the order of growth? What is Big O here? 
                                                                 </p>
 
-                                                                <p class="body-paragraph"> Since both loops are independent. For a single loop Big O will be O(n) as it goes as long as we have item on the list.
-                                                                    so the equation becomes: O(n) and O(n). Since these are independent loops. These loops will be added. And the equation becomes
-                                                                    O(n + n) which means O(2n), we removed the Multiplicative constant and it became O(n).
-                                                                    So the time complexity of this program will be Linear. 
+                                                                <p class="body-paragraph"> Since both loops are independent, 
+                                                                    for a single loop, Big O will be O(n) as it goes as long as we 
+                                                                    have an item on the list. so the equation becomes: O(n) and O(n). 
+                                                                    Since these are independent loops. These loops will be added. 
+                                                                    And the equation becomes O(n + n), which means O(2n).
+                                                                     We removed the Multiplicative constant, and it became O(n). 
+                                                                     So the time complexity of this program will be Linear. 
 
 
 
                                                                 </p>
                                                                 <p class="body-paragraph"> 
 
-                                                                I’ll also be continuing this series with multiple examples on how to calculate time Complexity with different examples.
+                                                                    I’ll also continue this series with multiple examples of how to calculate time complexity with different examples.
                                                                 </p>
                              
                             
